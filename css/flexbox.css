@@ -7,13 +7,33 @@
 .signIn a,
 .createAccount,
 .signUp,
-.signUp a
+.signUp a,
+.nav,
+.nav-logo,
+.menu,
+.favorites,
+.footer,
+.nav-logo a,
+.newAccount,
+.newAccount a
 {
 	display: flex;
 }
 
+.nav {
+	height: 10vh;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav-logo {
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
 .wrapper {
-	height: 100vh;
+	height: 80vh;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -37,14 +57,30 @@
 
 .signUp {
 	height: 200px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.signUp a, .newAccount a {
+	padding: 10px 0;
 }
 
 .newAccount {
+	height: 400px;
 	flex-direction: column;
+	align-items: center;
 }
 
-.newAccount input {
-	margin: 12px 0;
+.newAccount a {
+	padding: 25px 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	height: 10vh;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Media Queries */
