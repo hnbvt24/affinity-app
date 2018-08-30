@@ -1,0 +1,66 @@
+/* Flex Container */
+
+.wrapper,
+.container,
+.logo,
+.signIn,
+.signIn a,
+.createAccount,
+.signUp,
+.signUp a
+{
+	display: flex;
+}
+
+.wrapper {
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container {
+	height: 300px;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.signIn, .createAccount {
+	height: 60px;
+}
+
+.signIn a, .signUp a {
+	justify-content: center;
+	align-items: center;
+}
+
+.signUp {
+	height: 200px;
+}
+
+.newAccount {
+	flex-direction: column;
+}
+
+.newAccount input {
+	margin: 12px 0;
+}
+
+/* Media Queries */
+@media all and (max-width:768px) {
+	
+	
+}
+
+
+@media all and (max-width:320px) {
+	.container{
+		height: 200px;
+	}
+	
+	.bottom {
+		margin-top: 0;
+	}
+	
+}

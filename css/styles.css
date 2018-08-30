@@ -1,1 +1,138 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
 
+/* Color pallette:
+  Yellow:    	#E0BD23;
+  off-white:    #FFFED6;
+*/
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+	background-image: linear-gradient(#e3c338, #e0bd23, #c9aa1f);
+	color:#FFFED6;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	min-height: 100vh;
+}
+
+h1, .signIn a, a {
+	font-family: 'Oswald', sans-serif;
+}
+
+a {
+  color: #ffffff;
+  font-size: 1.25em;
+  letter-spacing: .5px;
+  text-decoration: none;
+}
+
+a:hover {
+	color: #ff6600;
+	transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s; /* Safari */
+}
+
+h1 {
+	color: #FFFED6;
+	font-size: 6em;
+	margin: 10px auto;
+	text-align: center;
+}
+
+h2 {
+	color: #FFFED6;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+/* ================================= 
+ Layout Styles
+==================================== */
+
+.logo img {
+	width: 6em;	
+}
+
+.signIn, .createAccount {
+	margin: 10px 0 15px 0;
+}
+
+.signIn a, .signUp a {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+	border: 3px solid #ffffff;
+	border-radius: 32px;
+	color: white;
+	font-size: 1.75em;
+	width: 200px;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s; /* Safari */
+}
+.signIn a:hover, .signUp a:hover {
+    background-color: #ffffff;
+    color: #e0bd23;
+}
+
+.signIn a:focus .signUp a:focus{
+	background-color: #ff6600;
+    color: #ffffff;
+	 transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s; /* Safari */
+}
+
+/* ================================= 
+ Media Queries
+==================================== */
+@media screen and (max-width: 768px) {
+	a {
+		font-size: 1.25em;
+	}
+
+	h1 {
+		font-size: 4.8em;
+	}
+
+	h2 {
+		font-size: 1.10em;
+	}
+	
+	.logo img {
+		width: 4.8em;	
+	}
+}
+
+@media screen and (max-width: 320px) {
+	a {
+		font-size: 1.2em;
+	}
+
+	h1 {
+		font-size: 4em;
+	}
+
+	h2 {
+		font-size: .95em;
+	}
+	
+	.logo img {
+		width: 4em;	
+	}
+}
