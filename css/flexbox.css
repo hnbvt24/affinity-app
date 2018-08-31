@@ -15,7 +15,12 @@
 .footer,
 .nav-logo a,
 .newAccount,
-.newAccount a
+.newAccount a,
+.help,
+.sideNav,
+.navMenu,
+.signOut,
+.signOut a
 {
 	display: flex;
 }
@@ -30,6 +35,13 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+.help {
+	width: 100%;
+	margin-right: 10%;
+	align-items: center;
+	justify-content: flex-end;
 }
 
 .wrapper {
@@ -62,7 +74,8 @@
 }
 
 .signUp a, .newAccount a {
-	padding: 10px 0;
+	margin-top: 15px;
+	padding: 25px 0;
 }
 
 .newAccount {
@@ -75,6 +88,33 @@
 	padding: 25px 0;
 	justify-content: center;
 	align-items: center;
+}
+
+.sidenav {
+	flex-direction:column;
+	height: 100vh;
+}
+
+.menu, .favorites {
+	align-items: center;
+}
+
+.navMenu {
+	align-items:flex-start;
+	flex-direction:column;
+	height: 40vh;
+}
+
+.signOut {
+	align-items:flex-end;
+	justify-content: center;
+	height: 40vh;
+}
+
+.signOut a {
+	justify-content: center;
+	align-items: center;
+	padding: 8px;
 }
 
 .footer {
