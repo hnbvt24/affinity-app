@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -18,17 +19,30 @@
 </head>
 <body>
 	<div class="nav">
+		<div id="mySidenav" class="sidenav">
+			<div class="navMenu">
+			    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			    <a href="home.html">Home</a>
+			    <a href="#">Travel Preferences</a>
+			    <a href="#">Favorites</a>
+			    <a href="#">Booked Trips</a>
+			    <a href="#">Help</a>
+			</div>
+		    <div class="signOut">
+				<a href="index.html">Sign Out</a>
+		    </div>
+		</div>
 		<div class="menu">
-			<a href="#">Menu</a>
+			<span style="cursor:pointer" onclick="openNav()">&#9776;</span>
 		</div>
 		<div class="nav-logo">
 			<a href="home.html">
-				<img src="img/pin.svg"/>
+				<img src="img/pin.svg" alt="logo pin">
 				<h1>Affinity</h1>
 			</a>
 		</div>
 		<div class="favorites">
-			<a href="#">Favorites</a>
+			<a href="#"><img src="img/heart.svg" alt="favorites"></a>
 		</div>
 	</div>
     <div class="wrapper animsition searchNav" data-animsition-in-class="fade-in-right" data-animsition-in-duration="1000" data-animsition-out-class="fade-out-left" data-animsition-out-duration="800">
@@ -42,6 +56,18 @@
 		Copyright 2018
 	</div>
 <script src="animsition-master/dist/js/animsition.min.js" charset="utf-8"></script>
+<script>
+function openNav() {
+	if (window.matchMedia("(min-width: 321px)").matches) {
+		document.getElementById("mySidenav").style.width = "250px";
+	} else {
+		document.getElementById("mySidenav").style.width = "100%";
+	}
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 </html>

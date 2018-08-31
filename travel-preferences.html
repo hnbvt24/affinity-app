@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Affinity - Travel Preferences</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -22,6 +23,23 @@
   </script>
 </head>
 <body>
+	<div id="mySidenav" class="helpNav">
+		<div class="navMenu">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<h3>Welcome to Affinity!</h3>
+			<p>We're here to help you book your next hotel venture by giving you the quickest and best results.</p>
+			<p>We know what it's like navigating the web and trying to find the best deals, convenient locations, compare amenities, and all the extra details that go into planning your next stay. It can be a headache.</p>
+			<p>That's why we created <em>Affinity</em>.</p>
+			<p>Affinity is a travel booking application that will help you find just what you are looking for! We collect all the available hotel information with the most widely trusted and well rated reviews across America and hand pick the ones that best suit your preferences.</p>
+			<p>Spend less time searching and spend more time doing the things you love.</p>
+			<p>Happy travels!</p>
+		</div>
+	</div>
+	<div class="nav">
+		<div class="help">
+			<span style="cursor:pointer" onclick="openNav()"><img src="img/question-mark.svg" alt="Help"></span>
+		</div>
+	</div>
     <div class="wrapper animsition" data-animsition-in-class="fade-in-right" data-animsition-in-duration="1000" data-animsition-out-class="fade-out-left" data-animsition-out-duration="800">
 
 		<!--<div class="nav-logo">
@@ -81,6 +99,21 @@ var checkout = $('#dp2').datepicker({
 
 }).on('changeDate', function(ev) {});
 
+</script>
+<script>
+function openNav() {
+	if (window.matchMedia("(min-width: 768px)").matches) {
+		document.getElementById("mySidenav").style.width = "40%";
+	} else if (window.matchMedia("(min-width: 320px)").matches) {
+		document.getElementById("mySidenav").style.width = "65%";
+	} else {
+		document.getElementById("mySidenav").style.width = "100%";
+	}
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 </script>
 </body>
 </html>
